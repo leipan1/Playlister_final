@@ -297,6 +297,7 @@ input {
   border-width: 5px;
   border-radius: 10px;
   border-style: groove;
+  margin-top: none;
 }
 
 .modal-dialog > * {
