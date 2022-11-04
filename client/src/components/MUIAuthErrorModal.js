@@ -28,7 +28,6 @@ const style = {
 export default function AuthErrorModal() {
     const { auth } = useContext(AuthContext);
     let errorMessage = "";
-    console.log("checking:::"+auth.errorMessage)
     if (auth.errorMessage) {
         errorMessage=auth.errorMessage
         console.log("ERROR MESSAGE::::"+errorMessage)
