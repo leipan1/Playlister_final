@@ -30,7 +30,6 @@ export default function AuthErrorModal() {
     let errorMessage = "";
     if (auth.errorMessage) {
         errorMessage=auth.errorMessage
-        console.log("ERROR MESSAGE::::"+errorMessage)
     }
     function handleCloseModal(event) {
         auth.closeErrorModal();

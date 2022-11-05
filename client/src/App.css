@@ -144,8 +144,8 @@ body {
   float: left;
   float: top;
   pointer-events:auto;
-  height: 50%;
-  width: 3.5%;
+  width: 35px;
+  height: 25px;
 }
 
 #list-selector-list {
@@ -333,9 +333,25 @@ input {
   padding: 1rem;
 }
 
+#edit-song-modal{
+  position: relative;
+  background: var(--swatch-complement);
+  cursor: default;
+  border-width: 5px;
+  border-radius: 10px;
+  border-style: groove;
+  /* width: 100%; */
+}
+
+
 .modal-header,
 .modal-footer {
   background: var(--lightgray);
+}
+
+.modal-footer{
+  text-align:center;
+  margin-top: 2rem;
 }
 
 .modal-header {
@@ -343,9 +359,11 @@ input {
   align-items: center;
   justify-content: space-between;
   border-bottom: dotted;
+  font-size:3rem;
+  margin-bottom: 2rem;
 }
 
-.modal-header,
+/* .modal-header, */
 .modal-close {
   font-size: 1.5rem;
 }
@@ -363,6 +381,7 @@ input {
   font-size: 24pt;
 }
 
+
 #close-modal-button {
   float: right;
 }
@@ -370,6 +389,15 @@ input {
 #confirm-cancel-container {
   text-align: center;
 }
+
+.modal-center-edit{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 33% 33% 33%;
+  gap: 10px 20px;
+  font-size: xx-large;
+}
+
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { GlobalStoreContext } from '../store'
+import MUIEditSongModal from './MUIEditSongModal';
 
 function SongCard(props) {
     const { store } = useContext(GlobalStoreContext);
@@ -71,6 +72,8 @@ function SongCard(props) {
                 value={"\u2715"}
                 onClick={handleRemoveSong}
             />
+            
+
         </div>
     );
 }
