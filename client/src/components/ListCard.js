@@ -27,7 +27,7 @@ function ListCard(props) {
             if (_id.indexOf('list-card-text-') >= 0)
                 _id = ("" + _id).substring("list-card-text-".length);
 
-            console.log("load " + event.target.id);
+            //console.log("load " + event.target.id);
 
             // CHANGE THE CURRENT LIST
             store.setCurrentList(id);
