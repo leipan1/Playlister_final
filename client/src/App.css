@@ -143,6 +143,8 @@ body {
 #add-list-button {
   float: left;
   pointer-events:auto;
+  height: 65%;
+  width: 4%;
 }
 
 #list-selector-list {
