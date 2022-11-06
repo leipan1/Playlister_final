@@ -519,6 +519,10 @@ function GlobalStoreContextProvider(props) {
         return (store.currentList !== null && store.currentModal === CurrentModal.NONE);
     }
 
+    store.clearTransactions = function(){
+        tps.clearAllTransactions();
+    }
+
     // THIS FUNCTION ENABLES THE PROCESS OF EDITING A LIST NAME
     store.setIsListNameEditActive = function () {
         storeReducer({

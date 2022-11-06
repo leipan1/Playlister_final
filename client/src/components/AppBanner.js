@@ -91,6 +91,10 @@ export default function AppBanner() {
         else
             return <AccountCircle />;
     }
+    
+    function clearAllTransactions(event){
+        store.clearTransactions()
+    }
 
     return (
         <Box sx={{ flexGrow: 1 }}>
@@ -100,7 +104,9 @@ export default function AppBanner() {
                         variant="h4"
                         noWrap
                         component="div"
-                        sx={{ display: { xs: 'none', sm: 'block' } }}                        
+                        sx={{ display: { xs: 'none', sm: 'block' } }}    
+                        onClick={clearAllTransactions}  
+
                     >
                         <Link style={{ textDecoration: 'none', color: 'white' }} to='/'>⌂</Link>
                     </Typography>
