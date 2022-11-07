@@ -523,6 +523,13 @@ function GlobalStoreContextProvider(props) {
         tps.clearAllTransactions();
     }
 
+    store.canUndoCheck=function(){
+        return tps.hasTransactionToUndo()
+     }
+     store.canRedoCheck=function(){
+         return tps.hasTransactionToRedo()
+     }
+
     // THIS FUNCTION ENABLES THE PROCESS OF EDITING A LIST NAME
     store.setIsListNameEditActive = function () {
         storeReducer({
