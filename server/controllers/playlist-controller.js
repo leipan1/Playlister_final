@@ -27,6 +27,12 @@ createPlaylist = (req, res) => {
     User.findOne({ _id: req.userId }, (err, user) => {
         console.log("user found: " + JSON.stringify(user));
         user.playlists.push(playlist._id);
+        if (user.email != body.ownerEmail) {
+            return res.status(400).json({
+                success: false,
+                errorMessage: "UNAUTHORIZED"
+            })
+        }
         user
             .save()
             .then(() => {
@@ -48,6 +54,13 @@ createPlaylist = (req, res) => {
 deletePlaylist = async (req, res) => {
     console.log("delete Playlist with id: " + JSON.stringify(req.params.id));
     console.log("delete " + req.params.id);
+
+    // if(auth.verifyUser(req) === null){
+    //     return res.status(400).json({
+    //         errorMessage: 'UNAUTHORIZED'
+    //     })
+    // }
+
     Playlist.findById({ _id: req.params.id }, (err, playlist) => {
         console.log("playlist found: " + JSON.stringify(playlist));
         if (err) {
@@ -158,6 +171,12 @@ updatePlaylist = async (req, res) => {
     const body = req.body
     console.log("updatePlaylist: " + JSON.stringify(body));
     console.log("req.body.name: " + req.body.name);
+
+    // if(auth.verifyUser(req) === null){
+    //     return res.status(400).json({
+    //         errorMessage: 'UNAUTHORIZED'
+    //     })
+    // }
 
     if (!body) {
         return res.status(400).json({
