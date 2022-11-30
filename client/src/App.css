@@ -53,6 +53,15 @@ body {
   border-style: solid;
   border-radius: 10px;
 }
+
+#banner-logo{
+  color:rgb(97, 21, 21);
+  font-weight: bolder;
+  font-style: italic;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+
 #splash-screen {
   background: rgb(63,79,95);
   background: linear-gradient(180deg, rgba(63,79,95,1) 0%, rgba(143,182,205,1) 50%, rgba(201,233,241,1) 100%);
@@ -82,16 +91,21 @@ body {
 }
 
 #splash-screen-playlister-text{
-  color:rgb(196, 48, 48);
+  color:rgb(97, 21, 21);
   font-size: 110px;
   font-weight: bolder;
   font-style: italic;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#splash-screen-credit{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 #splash-screen-logins{
   position:relative;
-  top:100px;
+  top:90px;
 }
 
 #splash-screen-create-account,
@@ -126,6 +140,32 @@ body {
 #splash-screen-continue-as-guest:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+
+#menu-bar{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#menu-bar-icons{
+  font-size: 3.5rem;
+  width: 25%;
+  display:flex;
+  justify-content: space-around;
+
+}
+
+#menu-bar-search-bar{
+  position: relative;
+  top: 5px;
+  height: 40px;
+  width: 40%;
+}
+
+#menu-bar-sort{
+  display: flex;
+  font-size: 3.5rem;
 }
 
 #edit-toolbar {
@@ -208,11 +248,11 @@ body {
 }
 
 #list-selector-list {
-  position: absolute;
+  position: relative;
   left: 0%;
   top: 10%;
   width: 100%;
-  height: 80%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   overflow: scroll;

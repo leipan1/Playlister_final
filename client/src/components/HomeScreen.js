@@ -8,6 +8,7 @@ import Fab from '@mui/material/Fab'
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography'
 import Statusbar from './Statusbar';
+import MenuBar from './MenuBar';
 /*
     This React component lists all the top5 lists in the UI.
     
@@ -40,6 +41,7 @@ const HomeScreen = () => {
     }
     return (
         <div id="playlist-selector">
+            <MenuBar/>
             <div id="list-selector-heading">
             <Fab 
                 color="primary" 
@@ -47,9 +49,9 @@ const HomeScreen = () => {
                 id="add-list-button"
                 onClick={handleCreateNewList}
             >
-                <AddIcon />
+            <AddIcon />
             </Fab>
-                <Typography variant="h4">Your Lists</Typography>
+            <Typography variant="h4">Your Lists</Typography>
             </div>
             <div id="list-selector-list">
                 {

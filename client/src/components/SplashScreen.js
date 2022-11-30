@@ -9,6 +9,9 @@ export default function SplashScreen() {
                     Playlister
                 </div>
                 Your go-to playlist organizer
+                <div id="splash-screen-credit">
+                    by Leila Pan
+                </div>
             </div>
             <div id="splash-screen-logins">
                 <Link to='/register/'>

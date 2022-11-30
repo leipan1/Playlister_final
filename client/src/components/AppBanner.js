@@ -21,7 +21,6 @@ export default function AppBanner() {
     const isMenuOpen = Boolean(anchorEl);
 
     const handleProfileMenuOpen = (event) => {
-        console.log("PROFILE MENU CLICKEDD!!!!!!!!")
         setAnchorEl(event.currentTarget);
     };
 
@@ -108,7 +107,7 @@ export default function AppBanner() {
                         onClick={clearAllTransactions}  
 
                     >
-                        <Link style={{ textDecoration: 'none', color: 'white' }} to='/'>⌂</Link>
+                    <Link id="banner-logo" style={{ textDecoration: 'none'}} to='/'>Playlister</Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }}>{editToolbar}</Box>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
