@@ -148,6 +148,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #menu-bar-icons{
   font-size: 3.5rem;
   width: 25%;
@@ -247,15 +248,28 @@ body {
   height: 25px;
 }
 
+#playlist-selector-body{
+  display: flex;
+}
+
+
 #list-selector-list {
-  position: relative;
+  /* position: relative; */
   left: 0%;
   top: 10%;
   width: 100%;
-  height: 600px;
+  height: 430pt;
   display: flex;
   flex-direction: column;
   overflow: scroll;
+}
+
+#playlist-selector-left{
+  width: 60%;
+}
+#playlist-selector-right{
+  flex-grow: 1;
+  float: right;
 }
 
 #playlist-cards{

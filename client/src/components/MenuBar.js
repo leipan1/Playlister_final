@@ -2,7 +2,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
 import PersonIcon from '@mui/icons-material/Person';
 import SortIcon from '@mui/icons-material/Sort';
-import { fontSize } from '@mui/system';
 
 export default function MenuBar(){
 

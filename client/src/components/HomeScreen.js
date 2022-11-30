@@ -53,13 +53,20 @@ const HomeScreen = () => {
             </Fab>
             <Typography variant="h4">Your Lists</Typography>
             </div>
-            <div id="list-selector-list">
-                {
-                    listCard
-                }
-                <MUIDeleteModal />
+            <div id="playlist-selector-body">
+                <div id="playlist-selector-left">
+                    <div id="list-selector-list">
+                        {
+                            listCard
+                        }
+                        <MUIDeleteModal />
+                    </div>
+                </div>
+                <div id="playlist-selector-right">
+                        RIGHT SIDE
+                </div>
             </div>
-            <Statusbar />
+            <Statusbar/>
         </div>)
 }
 
